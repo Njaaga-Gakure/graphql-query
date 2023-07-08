@@ -66,12 +66,12 @@ const Users = () => {
   )
 }
 const Wrapper = styled.main`
-    padding: 2rem 0;
-    .user-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
+  padding: 2rem 0;
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
   .user {
     background: var(--gray-50);
     padding: 0 2rem;
