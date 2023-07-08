@@ -81,6 +81,18 @@ a {
   display: grid;
   place-items: center;
 }
+
+/* bounce animation */
+@keyframes bounce-in-out {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .btn {
   background: var(--primary-300);
   border-color: transparent;
@@ -103,6 +115,10 @@ a {
 .btn-secondary:hover {
   background: var(--primary-300);
   color: #ffffff;
+}
+.animated-btn {
+  animation: bounce-in-out 1.5s ease-in-out infinite;
+  display: inline-block;
 }
 hr {
   border: none;

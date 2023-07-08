@@ -60,6 +60,10 @@ const Wrapper = styled.main`
     border-radius: var(--border-radius-1);
     width: 300px;
     margin: 2rem auto;
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   .user-name {
     text-align: center;

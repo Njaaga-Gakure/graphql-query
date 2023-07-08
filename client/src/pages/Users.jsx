@@ -77,6 +77,10 @@ const Wrapper = styled.main`
     padding: 0 2rem;
     box-shadow: var(--shadow-1);
     border-radius: var(--border-radius-1);
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   .user-name {
     text-align: center;

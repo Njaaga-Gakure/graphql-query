@@ -4,11 +4,11 @@ const Home = () => {
   return (
     <Wrapper className="full-page">
         <div>
-            <h1 className="title">GraphQL Query</h1>
+            <h1 className="title">GraphQL (Query)</h1>
         <div className="btn-container">
-        <Link to="/users" className="btn">
+        <Link to="/users" className="btn animated-btn">
                 view all users
-            </Link>
+        </Link>
         </div>
         </div>
     </Wrapper>
