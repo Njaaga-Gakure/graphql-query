@@ -1,5 +1,6 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
-import { Users } from "./components"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Home, Users, SingleUser } from "./pages"
 function App() {
   const client = new ApolloClient({
     cache: new InMemoryCache() ,
@@ -7,7 +8,13 @@ function App() {
   })
   return (
     <ApolloProvider client={client}>
-      <Users />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/users/:id" element={<SingleUser />} />
+        </Routes>
+      </Router>
     </ApolloProvider>
   )
 }

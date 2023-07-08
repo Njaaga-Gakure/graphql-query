@@ -24,6 +24,7 @@
   /* other global variables */
   --border-radius-1: 3px;
   --border-radius-2: 5px;
+  --transition: all 0.3s ease-in-out;
 }
 * {
   box-sizing: border-box;
@@ -71,10 +72,37 @@ small,
 .text_small {
   font-size: 0.8rem;
 }
+a {
+  text-decoration: none;
+  color: unset;
+}
 .full-page {
   min-height: 100vh;
   display: grid;
   place-items: center;
+}
+.btn {
+  background: var(--primary-300);
+  border-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--border-radius-1);
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--primary-400);
+}
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--primary-300);
+  color: var(--primary-300);
+}
+.btn-secondary:hover {
+  background: var(--primary-300);
+  color: #ffffff;
 }
 hr {
   border: none;
